@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<head>
+    <title> LIBRARY DATA MANAGEMENT </title>
+    <h2>LIBRARY DATA MANAGEMENT</h2>
+    <link type="text/css" rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <table>
+        <tr>
+            <td>
+                <form autocomplete="off" onsubmit="onFormSubmit()">
+                    <div>
+                        <label for="BookCode">BookCode</label>
+                        <input type="text" name="BookCode" id="productCode">
+                    </div>
+                    <div>
+                        <label for="Book">Book Name</label>
+                        <input type="text" name="Book" id="product">
+                    </div>
+                    <div>
+                        <label for="qty">Qty</label>
+                        <input type="number" name="qty" id="qty">
+                    </div>
+                    <div>
+                        <label for="perPrice">Price</label>
+                        <input type="number" name="perPrice" id="perPrice">
+                    </div>
+                    
+
+                    <div class="form_action--button">
+                        <input type="submit" value="Submit">
+                        <input type="reset" value="Reset">
+                    </div>
+                </form>
+
+                <td>
+                    <table class="list" id="storeList">
+                        <thead>
+                            <tr>
+                                <th>Book Code</th>
+                                <th>Book Name</th>
+                                <th>Qty</th>
+                                <th>Price</th>
+                               
+                            </tr>
+                        </thead>
+                        <tbody>
+
+                        </tbody>
+                    </table>
+                </td>
+            </td>
+        </tr>
+    </table>
+    <script type="text/javascript" src="./script.js"></script>
+</body>
+</html>
